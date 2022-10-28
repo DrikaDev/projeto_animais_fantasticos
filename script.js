@@ -1,16 +1,21 @@
-const animais = document.getElementById("animais")
-console.log(animais);
+//retorne no console todas as imagens do site:
+const img = document.querySelectorAll("img")
+console.log(img);
 
-const gridSection = document.getElementsByClassName("grid-section")
-console.log(gridSection[1]);
+//retorne no console apenas as imagens que começaram com a palavra animal
+const imgAnimais = document.querySelectorAll("img[src^='img/animal']")
+console.log(imgAnimais);
 
-const primeiraLi = document.querySelector("li")
-console.log(primeiraLi);
+//selecione todos os links internos (onde o href começa com #)
+const linksInterno = document.querySelectorAll("[href^='#']")
+console.log(linksInterno);
 
-const linkInterno = document.querySelector('[href^="#"]')
-console.log(linkInterno);
+//selecione o primeiro h2 dentro de .animais-descricao
+const h2Animais = document.querySelector(".animais-descricao h2")
+console.log(h2Animais);
 
-const animaisImg = document.querySelectorAll(".animais img")
-console.log(animaisImg[0]);
-
-const gridSectionHtml = document.getElementsByClassName("grid-section")
+//selecione o último p do site
+const todosOsP = document.querySelectorAll("p")
+console.log(todosOsP);
+console.log(todosOsP[23]);
+console.log(todosOsP.length);
